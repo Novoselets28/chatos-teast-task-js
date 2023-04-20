@@ -1,13 +1,94 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgb(214, 203, 185);
+  color: black; 
+}
+
+.table{
+  width: 100%;
+  margin: 0 0 10px;
+}
+
+thead> tr> td {
+  font-weight: bold;
+  background: #3498DB;
+  color: MidnightBlue;
+}
+
+thead> tr> th{
+  cursor: pointer;
+}
+
+table td{
+  width: 1%;
+  font-size: 1em;
+  border: .010em solid blue;
+  text-align: center;
+}
+
+.table-body__btn{
+  padding: 0 3px;
+  margin: 5px;
+  width: 60px;
+  height: 14px;
+  font-size: 10px;
+  text-transform: uppercase;
+  background-color: #a25dcf;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+
+td>input{
+  display:block;
+  padding:10px;
+  width:250px;
+  border:1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.set-user{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.set-user input{
+  display:block;
+  margin:0 0 15px 0;
+  padding:10px;
+  width:250px;
+  border:1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn{
+  padding: 0 32px;
+  height: 48px;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #a25dcf;
+  color: white;
+  cursor: pointer;
+  margin: 0 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
